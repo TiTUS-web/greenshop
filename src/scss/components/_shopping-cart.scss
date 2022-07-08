@@ -1,0 +1,293 @@
+.cart {
+  // .cart__container
+
+  &__container {
+    &:first-child {
+      width: 72%;
+    }
+
+    &:last-child {
+      width: 25%;
+    }
+  }
+
+  // .cart__table
+
+  &__table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    border: 0;
+  }
+
+  // .cart__title
+
+  &__title {
+  }
+
+  // .cart__line
+
+  &__line {
+  }
+
+  @each $name in "subtotal" "shiping" "total" {
+    &__#{$name} {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // .cart__button
+
+  &__button {
+    &:first-child {
+      margin-top: 29px;
+      background: #46a358;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 16px;
+      color: #ffffff;
+      width: 100%;
+      padding: 12px 0;
+    }
+
+    &:last-child {
+      margin-top: 14px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 16px;
+      color: #46a358;
+      width: 100%;
+    }
+  }
+}
+
+.totals {
+  // .totals__heading
+
+  &__heading {
+    padding: 11px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+    text-align: center;
+    border-bottom: 1px solid #3d3d3d;
+  }
+
+  // .totals__content
+
+  &__content {
+    text-align: center;
+  }
+
+  // .totals__line
+
+  &__line {
+    align-items: center;
+  }
+}
+
+.heading {
+  // .heading_products
+
+  &_products {
+    text-align: start !important;
+  }
+
+  // .heading_price
+
+  &_price {
+  }
+
+  // .heading_quantity
+
+  &_quantity {
+  }
+
+  // .heading_total
+
+  &_total {
+  }
+
+  // .heading_delete
+
+  &_delete {
+  }
+}
+
+.content {
+  & {
+    height: 70px;
+    vertical-align: middle;
+    background: #fbfbfb;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #3d3d3d;
+  }
+
+  // .content_products
+
+  &_products {
+    display: flex;
+    align-items: center;
+    text-align: start !important;
+  }
+
+  // .content_price
+
+  &_price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #727272;
+  }
+
+  // .content_quantity
+
+  &_quantity {
+    align-items: center;
+  }
+
+  // .content_total
+
+  &_total {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #46a358;
+  }
+
+  // .content_delete
+
+  &_delete {
+  }
+
+  // .content_title
+
+  &__title {
+    margin-left: 14px;
+  }
+
+  // .content__img
+
+  &__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  // .content__counter
+
+  &__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  // .content__button
+
+  &__button {
+    background: linear-gradient(
+      180deg,
+      #46a358 0%,
+      rgba(70, 163, 88, 0.8) 100%
+    );
+    border-radius: 29px;
+    width: 22px;
+    height: 25px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+
+  // .content__amount
+
+  &__amount {
+    margin: 0 11px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 10px;
+    color: #3d3d3d;
+  }
+}
+
+.subtotal {
+  & {
+    margin-bottom: 21px;
+  }
+
+  // .subtotal__title
+
+  &__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+  }
+
+  // .subtotal__price
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    color: #3d3d3d;
+  }
+}
+
+.shiping {
+  & {
+    margin-bottom: 50px;
+  }
+
+  // .shiping__title
+
+  &__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+  }
+
+  // .shiping__price
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    color: #3d3d3d;
+  }
+}
+
+.total {
+  // .total__title
+
+  &__title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+  }
+
+  // .total__price
+
+  &__price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: right;
+    color: #3d3d3d;
+  }
+}
+.button {
+}

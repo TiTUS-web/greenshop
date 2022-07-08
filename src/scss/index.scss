@@ -1,0 +1,106 @@
+@use "./reset";
+@use "./mixins";
+@use "./variables";
+
+// header
+@use "./components/header";
+// /header
+
+// footer
+@use "./components/footer";
+// /footer
+
+// components
+@use "./components/promo";
+@use "./components/shop";
+@use './components/product';
+@use './components/shopping-cart';
+// /components
+
+// login
+// @use './components/login';
+// @use './components/registration';
+// /login
+
+.app {
+  &_wrapper {
+    max-width: 1240px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: 0 auto;
+    // text-align: center;
+  }
+
+  // .app__header
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 0.3px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(70, 163, 88, 0.5);
+  }
+
+  // .app__shop
+
+  &__shop {
+    display: flex;
+  }
+
+  // .app__footer
+
+  &__footer {
+    display: flex;
+    justify-content: start;
+    margin-top: 80px;
+    padding: 25px 23px 19px;
+    background: rgba(70, 163, 88, 0.1);
+  }
+
+  // .app__routing
+
+  &__routing {
+    margin: 36px 0 43px 0;
+  }
+
+  // .app__product
+
+  &__product {
+    margin-bottom: 92px;
+  }
+
+  // .app__product-description
+
+  &__product-description {
+  }
+
+  // .app__cart
+
+  &__cart {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.routing {
+  // .routing__parent
+
+  &__parent {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-right: 5px;
+  }
+
+  // .routing__child
+
+  &__child {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: #3d3d3d;
+    margin-left: 5px;
+  }
+}

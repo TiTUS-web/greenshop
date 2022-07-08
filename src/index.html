@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="app" class="app app_wrapper">
+      <header class="header app__header">
+        <a class="logo header__logo" href="#">
+          <img class="logo__img" src="src/images/logo.png" alt="logo" />
+        </a>
+
+        <div class="navigation header__navigation">
+          <button class="navbtn navigation__navbtn navbtn_home" type="button">
+            Home
+          </button>
+          <button class="navbtn navigation__navbtn navbtn_shop" type="button">
+            Shop
+          </button>
+          <button class="navbtn navigation__navbtn navbtn_blogs" type="button">
+            Blogs
+          </button>
+        </div>
+
+        <div class="tools header__tools">
+          <a class="navlink tools__navlink navlink_search" href="#">
+            <img
+              src="src/images/search.svg"
+              class="icon navlink__icon"
+              alt="search"
+            />
+          </a>
+          <a class="navlink tools__navlink navlink_basket" href="#">
+            <img
+              src="src/images/basket.svg"
+              class="icon navlink__icon"
+              alt="basket"
+            />
+            <div class="counter navlink__counter" alt="basket">6</div>
+          </a>
+          <a class="navlink tools__navlink navlink_login" href="#">
+            <img
+              src="src/images/logout.svg"
+              class="icon navlink__icon"
+              alt="login"
+            />
+            Login
+          </a>
+        </div>
+      </header>
+
+      <section class="routing app__routing">
+        <b class="parent routing__parent">Home</b>
+        /
+        <b class="child routing__child">Shop</b>
+      </section>
+
+      <!-- <section class="cart app__cart">
+        <div class="container cart__container">
+          <table class="totals cart__table" cellspacing="10" cellpadding="1">
+            <thead>
+              <tr>
+                <td class="heading totals__heading heading_products">
+                  Products
+                </td>
+                <td class="heading totals__heading heading_price">Price</td>
+                <td class="heading totals__heading heading_quantity">
+                  Quantity
+                </td>
+                <td class="heading totals__heading heading_total">Total</td>
+                <td class="heading totals__heading heading_delete"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="content totals__content content_products">
+                  <img
+                    class="img content__img"
+                    src="src/images/card_1.png"
+                    alt="product"
+                  />
+                  <p class="contnt__title">Barberton Daisy</p>
+                </td>
+                <td class="content totals__content content_price">$119.00</td>
+                <td class="content totals__content content_quantity">
+                  <div class="counter content__counter">
+                    <button class="button content__button">-</button>
+                    <p class="amount content__amount">1</p>
+                    <button class="button content__button">+</button>
+                  </div>
+                </td>
+                <td class="content totals__content content_total">$238.00</td>
+                <td class="content totals__content content_delete">
+                  <button>
+                    <img src="src/images/cart__delete.svg" alt="delete" />
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="container cart__container">
+          <p class="cart__title">Cart Totals</p>
+          <hr class="line cart__line" />
+          <div class="block cart__block">
+            <div class="subtotal cart__subtotal">
+              <p class="title subtotal__title">Subtotal</p>
+              <p class="price subtotal__price">$2,683.00</p>
+            </div>
+            <div class="shiping cart__shiping">
+              <p class="title shiping__title">Shiping</p>
+              <p class="price shiping__price">$16.00</p>
+            </div>
+            <div class="total cart__total">
+              <p class="title total__title">Total</p>
+              <p class="price total__price">$2,699.00</p>
+            </div>
+          </div>
+          <div class="buttons cart__buttons">
+            <button class="button cart__button">Proceed To Checkout</button>
+            <button class="button cart__button">Continue Shopping</button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="promo app__promo">
+        <div class="container promo__container">
+          <p class="welcome promo__welcome">Welcome to GreenShop</p>
+          <h1 class="title promo__title">
+            Let’s Make a Better <b class="bold title__bold">Planet</b>
+          </h1>
+          <p class="subtitle promo__subtitle">
+            We are an online plant shop offering a wide range of cheap and
+            trendy plants. Use our plants to create an unique Urban Jungle.
+            Order your favorite plants!
+          </p>
+          <button class="btn promo__btn" type="button">SHOP NOW</button>
+        </div>
+      </section> -->
+
+      <!-- <section class="shop app__shop">
+        <div class="container shop__container">
+          <div class="sidenav shop__sidenav">
+            <div class="container sidenav__container">
+              <p class="title sidenav__title">Categories</p>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">House Plants</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Potter Plants</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Seeds</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Small Plants</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Big Plants</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Succulents</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Trerrariums</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Gardening</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle">Accessories</p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+            </div>
+
+            <div class="container sidenav__container">
+              <p class="title sidenav__title">Price Range</p>
+              <div class="range shop__range">
+                <input
+                  type="text"
+                  class="lever range__lever range_lever_left"
+                />
+                <input
+                  type="text"
+                  class="lever range__lever range_lever_right"
+                />
+                <div class="filler range__filler"></div>
+              </div>
+              <p class="subtitle sidenav__subtitle">
+                Price:
+                <b class="bold subtitle__bold">$39-$1230</b>
+              </p>
+              <button class="btn sidenav__btn" type="button">Filter</button>
+            </div>
+
+            <div class="container sidenav__container">
+              <p class="title sidenav__title">Size</p>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle sidelink_subtitle_active">
+                  Small
+                </p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle sidelink_subtitle_active">
+                  Medium
+                </p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+              <button class="sidelink sidenav__sidelink">
+                <p class="subtitle sidelink__subtitle sidelink_subtitle_active">
+                  Large
+                </p>
+                <p class="counter sidelink__counter">(33)</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container shop__container">
+          <div class="navigation shop__navigation">
+            <div class="container navigation__container">
+              <button class="filterbtn navigation__filterbtn" type="button">
+                All Plants
+              </button>
+              <button class="filterbtn navigation__filterbtn" type="button">
+                New Arrivals
+              </button>
+              <button class="filterbtn navigation__filterbtn" type="button">
+                Sale
+              </button>
+            </div>
+            <div class="container navigation__container">
+              <label class="subtitle navigation__subtitle" for="dropdown"
+                >Short by:</label
+              >
+              <select class="dropdown navigation__dropdown" id="dropdown">
+                <option class="select dropdown__select" value="Default Sorting">
+                  Default Sorting
+                </option>
+                <option class="select dropdown__select" value="Default Sorting">
+                  Default Sorting
+                </option>
+                <option class="select dropdown__select" value="Default Sorting">
+                  Default Sorting
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="products shop__products">
+            <div class="card products__card">
+              <div class="block card__block card_block_display">
+                <img
+                  class="img card__img"
+                  src="src/images/card_1.png"
+                  alt="card"
+                />
+                <div class="display card__display">
+                  <button class="btn display__btn display_btn_basket">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_favorites">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_search">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="block card__block">
+                <p class="title card__title">Barberton Daisy</p>
+                <p class="price card__price">$119.00</p>
+              </div>
+            </div>
+            <div class="card products__card">
+              <div class="block card__block card_block_display">
+                <img
+                  class="img card__img"
+                  src="src/images/card_1.png"
+                  alt="card"
+                />
+                <div class="display card__display">
+                  <button class="btn display__btn display_btn_basket">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_favorites">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_search">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="block card__block">
+                <p class="title card__title">Barberton Daisy</p>
+                <p class="price card__price">$119.00</p>
+              </div>
+            </div>
+            <div class="card products__card">
+              <div class="block card__block card_block_display">
+                <img
+                  class="img card__img"
+                  src="src/images/card_1.png"
+                  alt="card"
+                />
+                <div class="display card__display">
+                  <button class="btn display__btn display_btn_basket">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_favorites">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_search">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="block card__block">
+                <p class="title card__title">Barberton Daisy</p>
+                <p class="price card__price">$119.00</p>
+              </div>
+            </div>
+            <div class="card products__card">
+              <div class="block card__block card_block_display">
+                <img
+                  class="img card__img"
+                  src="src/images/card_1.png"
+                  alt="card"
+                />
+                <div class="display card__display">
+                  <button class="btn display__btn display_btn_basket">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_favorites">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_search">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="block card__block">
+                <p class="title card__title">Barberton Daisy</p>
+                <p class="price card__price">$119.00</p>
+              </div>
+            </div>
+            <div class="card products__card">
+              <div class="block card__block card_block_display">
+                <img
+                  class="img card__img"
+                  src="src/images/card_1.png"
+                  alt="card"
+                />
+                <div class="display card__display">
+                  <button class="btn display__btn display_btn_basket">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 25 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.1567 20.25H9.89163C6.79003 20.25 4.26667 17.7267 4.26667 14.6251V8.85947C4.26667 5.9762 2.82958 3.30739 0.422521 1.72031C-0.00975775 1.43531 -0.129101 0.853876 0.155897 0.421598C0.440896 -0.0107278 1.02228 -0.130118 1.45465 0.154974C2.82874 1.06097 3.94351 2.2559 4.74067 3.63167C4.91293 3.82466 6.30202 5.29699 8.57919 5.29699H19.3748C22.3201 5.24191 24.6254 8.19769 23.8554 11.0406L22.6126 15.9939C21.9839 18.4998 19.7404 20.25 17.1567 20.25ZM5.90513 6.64234C6.06099 7.36238 6.14166 8.10483 6.14166 8.85947V14.6251C6.14166 16.6928 7.8239 18.375 9.89163 18.375H17.1567C18.8792 18.375 20.3748 17.2082 20.794 15.5376L22.0367 10.5844C22.4943 8.89509 21.1243 7.13931 19.3748 7.17198H8.57914C7.54926 7.17198 6.65283 6.94993 5.90513 6.64234ZM9.42289 22.8281C9.42289 22.1809 8.89822 21.6563 8.25102 21.6563C6.69609 21.7182 6.69745 23.9387 8.25102 24C8.89822 24 9.42289 23.4753 9.42289 22.8281ZM18.751 22.8281C18.751 22.1809 18.2263 21.6563 17.5791 21.6563C16.0242 21.7182 16.0255 23.9387 17.5791 24C18.2263 24 18.751 23.4753 18.751 22.8281ZM20.3123 9.98446C20.3123 9.46668 19.8925 9.04697 19.3748 9.04697H8.95414C7.71027 9.09647 7.71121 10.8729 8.95414 10.922H19.3748C19.8925 10.922 20.3123 10.5022 20.3123 9.98446Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_favorites">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 18"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
+                      />
+                    </svg>
+                  </button>
+                  <button class="btn display__btn display_btn_search">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.5726 16.0029C10.5755 19.1865 4.988 18.3056 2.02842 14.6542C-0.828088 11.129 -0.64944 6.04347 2.44943 2.82482C5.65137 -0.500594 10.6854 -0.944524 14.3346 1.78337C15.642 2.76051 16.6183 4.00364 17.2542 5.50838C17.8938 7.02186 18.0881 8.59654 17.8663 10.2205C17.6452 11.837 17 13.2775 15.9499 14.6217C16.0349 14.6773 16.1255 14.7173 16.1904 14.7822C17.3448 15.9311 18.4947 17.0843 19.6491 18.2331C19.9227 18.5054 20.0589 18.8225 19.9776 19.2047C19.8165 19.9651 18.9107 20.2586 18.3298 19.7366C18.0575 19.4925 17.807 19.2234 17.5484 18.9649C16.6002 18.0177 15.6526 17.0699 14.7044 16.1227C14.665 16.0853 14.6238 16.0503 14.5726 16.0029ZM15.9605 8.98677C15.9705 5.12689 12.8529 2.00627 8.98261 2.00065C5.12292 1.99503 2.00781 5.09068 1.99094 8.94806C1.97408 12.8173 5.08544 15.9467 8.96762 15.9648C12.8117 15.9829 15.9505 12.8504 15.9605 8.98677Z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="block card__block">
+                <p class="title card__title">Barberton Daisy</p>
+                <p class="price card__price">$119.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="pagination shop__pagination">
+            <button class="btn pagination__btn">1</button>
+            <button class="btn pagination__btn">2</button>
+            <button class="btn pagination__btn">3</button>
+            <button class="btn pagination__btn">4</button>
+            <button class="btn pagination__btn pagination_btn_arrow">
+              <img src="src/images/pagination__btn.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="product app__product">
+        <div class="container product__container">
+          <div class="gallery product__gallery">
+            <div class="container gallery__container">
+              <div class="wrapper gallery__wrapper">
+                <img
+                  class="image gallery__image"
+                  src="src/images/card_1.png"
+                  alt="img"
+                />
+              </div>
+              <div class="wrapper gallery__wrapper">
+                <img
+                  class="image gallery__image"
+                  src="src/images/card_1.png"
+                  alt="img"
+                />
+              </div>
+              <div class="wrapper gallery__wrapper">
+                <img
+                  class="image gallery__image"
+                  src="src/images/card_1.png"
+                  alt="img"
+                />
+              </div>
+              <div class="wrapper gallery__wrapper">
+                <img
+                  class="image gallery__image"
+                  src="src/images/card_1.png"
+                  alt="img"
+                />
+              </div>
+            </div>
+            <div class="container gallery__container">
+              <div class="wrapper gallery__wrapper gallery_wrapper_current">
+                <img
+                  class="image gallery__image gallery_image_current"
+                  src="src/images/card_1.png"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="interface product__interface">
+            <div class="heading interface__heading">
+              <h2 class="title heading__title">Barberton Daisy</h2>
+              <div class="raiting heading__raiting">
+                <svg
+                  class="star raiting__star raiting_star_active"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1991 7.95006C10.0372 8.10694 9.9628 8.33381 9.99968 8.55631L10.5553 11.6313C10.6022 11.8919 10.4922 12.1557 10.2741 12.3063C10.0603 12.4626 9.77593 12.4813 9.5428 12.3563L6.77468 10.9126C6.67843 10.8613 6.57155 10.8338 6.46218 10.8307H6.2928C6.23405 10.8394 6.17655 10.8582 6.12405 10.8869L3.3553 12.3376C3.21843 12.4063 3.06343 12.4307 2.91155 12.4063C2.54155 12.3363 2.29468 11.9838 2.3553 11.6119L2.91155 8.53694C2.94843 8.31256 2.87405 8.08443 2.71218 7.92506L0.455303 5.73756C0.266553 5.55444 0.200928 5.27944 0.287178 5.03131C0.370928 4.78381 0.584678 4.60319 0.842803 4.56256L3.94905 4.11194C4.1853 4.08756 4.3928 3.94381 4.49905 3.73131L5.8678 0.925061C5.9003 0.862561 5.94218 0.805061 5.9928 0.756311L6.04905 0.712561C6.07843 0.680061 6.11218 0.653186 6.14968 0.631311L6.2178 0.606311L6.32405 0.562561H6.58718C6.82218 0.586936 7.02905 0.727561 7.13718 0.937561L8.52405 3.73131C8.62405 3.93569 8.81843 4.07756 9.0428 4.11194L12.1491 4.56256C12.4116 4.60006 12.6309 4.78131 12.7178 5.03131C12.7997 5.28194 12.7291 5.55694 12.5366 5.73756L10.1991 7.95006Z"
+                  />
+                </svg>
+                <svg
+                  class="star raiting__star"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1991 7.95006C10.0372 8.10694 9.9628 8.33381 9.99968 8.55631L10.5553 11.6313C10.6022 11.8919 10.4922 12.1557 10.2741 12.3063C10.0603 12.4626 9.77593 12.4813 9.5428 12.3563L6.77468 10.9126C6.67843 10.8613 6.57155 10.8338 6.46218 10.8307H6.2928C6.23405 10.8394 6.17655 10.8582 6.12405 10.8869L3.3553 12.3376C3.21843 12.4063 3.06343 12.4307 2.91155 12.4063C2.54155 12.3363 2.29468 11.9838 2.3553 11.6119L2.91155 8.53694C2.94843 8.31256 2.87405 8.08443 2.71218 7.92506L0.455303 5.73756C0.266553 5.55444 0.200928 5.27944 0.287178 5.03131C0.370928 4.78381 0.584678 4.60319 0.842803 4.56256L3.94905 4.11194C4.1853 4.08756 4.3928 3.94381 4.49905 3.73131L5.8678 0.925061C5.9003 0.862561 5.94218 0.805061 5.9928 0.756311L6.04905 0.712561C6.07843 0.680061 6.11218 0.653186 6.14968 0.631311L6.2178 0.606311L6.32405 0.562561H6.58718C6.82218 0.586936 7.02905 0.727561 7.13718 0.937561L8.52405 3.73131C8.62405 3.93569 8.81843 4.07756 9.0428 4.11194L12.1491 4.56256C12.4116 4.60006 12.6309 4.78131 12.7178 5.03131C12.7997 5.28194 12.7291 5.55694 12.5366 5.73756L10.1991 7.95006Z"
+                  />
+                </svg>
+                <svg
+                  class="star raiting__star"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1991 7.95006C10.0372 8.10694 9.9628 8.33381 9.99968 8.55631L10.5553 11.6313C10.6022 11.8919 10.4922 12.1557 10.2741 12.3063C10.0603 12.4626 9.77593 12.4813 9.5428 12.3563L6.77468 10.9126C6.67843 10.8613 6.57155 10.8338 6.46218 10.8307H6.2928C6.23405 10.8394 6.17655 10.8582 6.12405 10.8869L3.3553 12.3376C3.21843 12.4063 3.06343 12.4307 2.91155 12.4063C2.54155 12.3363 2.29468 11.9838 2.3553 11.6119L2.91155 8.53694C2.94843 8.31256 2.87405 8.08443 2.71218 7.92506L0.455303 5.73756C0.266553 5.55444 0.200928 5.27944 0.287178 5.03131C0.370928 4.78381 0.584678 4.60319 0.842803 4.56256L3.94905 4.11194C4.1853 4.08756 4.3928 3.94381 4.49905 3.73131L5.8678 0.925061C5.9003 0.862561 5.94218 0.805061 5.9928 0.756311L6.04905 0.712561C6.07843 0.680061 6.11218 0.653186 6.14968 0.631311L6.2178 0.606311L6.32405 0.562561H6.58718C6.82218 0.586936 7.02905 0.727561 7.13718 0.937561L8.52405 3.73131C8.62405 3.93569 8.81843 4.07756 9.0428 4.11194L12.1491 4.56256C12.4116 4.60006 12.6309 4.78131 12.7178 5.03131C12.7997 5.28194 12.7291 5.55694 12.5366 5.73756L10.1991 7.95006Z"
+                  />
+                </svg>
+                <svg
+                  class="star raiting__star"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1991 7.95006C10.0372 8.10694 9.9628 8.33381 9.99968 8.55631L10.5553 11.6313C10.6022 11.8919 10.4922 12.1557 10.2741 12.3063C10.0603 12.4626 9.77593 12.4813 9.5428 12.3563L6.77468 10.9126C6.67843 10.8613 6.57155 10.8338 6.46218 10.8307H6.2928C6.23405 10.8394 6.17655 10.8582 6.12405 10.8869L3.3553 12.3376C3.21843 12.4063 3.06343 12.4307 2.91155 12.4063C2.54155 12.3363 2.29468 11.9838 2.3553 11.6119L2.91155 8.53694C2.94843 8.31256 2.87405 8.08443 2.71218 7.92506L0.455303 5.73756C0.266553 5.55444 0.200928 5.27944 0.287178 5.03131C0.370928 4.78381 0.584678 4.60319 0.842803 4.56256L3.94905 4.11194C4.1853 4.08756 4.3928 3.94381 4.49905 3.73131L5.8678 0.925061C5.9003 0.862561 5.94218 0.805061 5.9928 0.756311L6.04905 0.712561C6.07843 0.680061 6.11218 0.653186 6.14968 0.631311L6.2178 0.606311L6.32405 0.562561H6.58718C6.82218 0.586936 7.02905 0.727561 7.13718 0.937561L8.52405 3.73131C8.62405 3.93569 8.81843 4.07756 9.0428 4.11194L12.1491 4.56256C12.4116 4.60006 12.6309 4.78131 12.7178 5.03131C12.7997 5.28194 12.7291 5.55694 12.5366 5.73756L10.1991 7.95006Z"
+                  />
+                </svg>
+                <svg
+                  class="star raiting__star"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.1991 7.95006C10.0372 8.10694 9.9628 8.33381 9.99968 8.55631L10.5553 11.6313C10.6022 11.8919 10.4922 12.1557 10.2741 12.3063C10.0603 12.4626 9.77593 12.4813 9.5428 12.3563L6.77468 10.9126C6.67843 10.8613 6.57155 10.8338 6.46218 10.8307H6.2928C6.23405 10.8394 6.17655 10.8582 6.12405 10.8869L3.3553 12.3376C3.21843 12.4063 3.06343 12.4307 2.91155 12.4063C2.54155 12.3363 2.29468 11.9838 2.3553 11.6119L2.91155 8.53694C2.94843 8.31256 2.87405 8.08443 2.71218 7.92506L0.455303 5.73756C0.266553 5.55444 0.200928 5.27944 0.287178 5.03131C0.370928 4.78381 0.584678 4.60319 0.842803 4.56256L3.94905 4.11194C4.1853 4.08756 4.3928 3.94381 4.49905 3.73131L5.8678 0.925061C5.9003 0.862561 5.94218 0.805061 5.9928 0.756311L6.04905 0.712561C6.07843 0.680061 6.11218 0.653186 6.14968 0.631311L6.2178 0.606311L6.32405 0.562561H6.58718C6.82218 0.586936 7.02905 0.727561 7.13718 0.937561L8.52405 3.73131C8.62405 3.93569 8.81843 4.07756 9.0428 4.11194L12.1491 4.56256C12.4116 4.60006 12.6309 4.78131 12.7178 5.03131C12.7997 5.28194 12.7291 5.55694 12.5366 5.73756L10.1991 7.95006Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="price interface__price">$119.00</div>
+            <hr class="line interface__line" />
+            <div class="description interface__description">
+              <p class="description__title">Short Description:</p>
+              <p class="description__subtitle">
+                The ceramic cylinder planters come with a wooden stand to help
+                elevate your plants off the ground. The ceramic cylinder
+                planters come with a wooden stand to help elevate your plants
+                off the ground.
+              </p>
+            </div>
+            <div class="size interface__size">
+              <p class="size__title">Size:</p>
+              <div class="container size__buttons">
+                <button class="button size__button">S</button>
+                <button class="button size__button">M</button>
+                <button class="button size__button">L</button>
+                <button class="button size__button">XL</button>
+              </div>
+            </div>
+            <div class="actions interface__actions">
+              <div class="counter actions__counter">
+                <button class="button counter__button">-</button>
+                <p class="amount counter__amount">1</p>
+                <button class="button counter__button">+</button>
+              </div>
+              <div class="purchase actions__purchase">
+                <button class="button purchase__button">Buy NOW</button>
+                <button class="button purchase__button">Add to cart</button>
+                <button class="button purchase__button">
+                  <svg
+                    class="icon purchase__icon"
+                    width="20"
+                    height="18"
+                    viewBox="0 0 20 18"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10 17.8873C9.71527 17.8873 9.44077 17.7842 9.22684 17.5968C8.41888 16.8903 7.63992 16.2264 6.95267 15.6408L6.94916 15.6377C4.93423 13.9207 3.19427 12.4378 1.98364 10.9771C0.630341 9.34409 0 7.79578 0 6.10434C0 4.46097 0.563507 2.94485 1.58661 1.83508C2.62192 0.712189 4.04251 0.09375 5.58716 0.09375C6.74164 0.09375 7.79892 0.45874 8.72955 1.1785C9.19922 1.54181 9.62494 1.98645 10 2.5051C10.3752 1.98645 10.8008 1.54181 11.2706 1.1785C12.2012 0.45874 13.2585 0.09375 14.413 0.09375C15.9575 0.09375 17.3782 0.712189 18.4135 1.83508C19.4366 2.94485 20 4.46097 20 6.10434C20 7.79578 19.3698 9.34409 18.0165 10.9769C16.8059 12.4378 15.0661 13.9205 13.0515 15.6374C12.363 16.224 11.5828 16.8889 10.773 17.5971C10.5592 17.7842 10.2846 17.8873 10 17.8873ZM5.58716 1.26532C4.37363 1.26532 3.25882 1.74963 2.44781 2.62915C1.62476 3.52194 1.17142 4.75607 1.17142 6.10434C1.17142 7.52692 1.70013 8.79919 2.88559 10.2296C4.03137 11.6122 5.73563 13.0645 7.70889 14.7462L7.71255 14.7492C8.4024 15.3371 9.18442 16.0036 9.99832 16.7153C10.8171 16.0023 11.6003 15.3347 12.2916 14.7458C14.2647 13.0642 15.9688 11.6122 17.1146 10.2296C18.2999 8.79919 18.8286 7.52692 18.8286 6.10434C18.8286 4.75607 18.3752 3.52194 17.5522 2.62915C16.7413 1.74963 15.6264 1.26532 14.413 1.26532C13.524 1.26532 12.7078 1.54791 11.9872 2.10516C11.3449 2.60199 10.8975 3.23004 10.6352 3.66949C10.5003 3.89548 10.2629 4.03036 10 4.03036C9.73709 4.03036 9.49966 3.89548 9.36478 3.66949C9.10263 3.23004 8.65524 2.60199 8.01285 2.10516C7.29218 1.54791 6.47598 1.26532 5.58716 1.26532Z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section class="product-navigation app__product-navigation">
+        <div class="container product-navigation__container">
+          <button class="filterbtn product-navigation__filterbtn" type="button">
+            Product Description
+          </button>
+          <button class="filterbtn product-navigation__filterbtn" type="button">
+            Releted Products
+          </button>
+        </div>
+      </section> -->
+
+      <!-- <section class="product-description app__product-description">
+        <p class="subtitle description__subtitle subtitle_fluid">
+          The ceramic cylinder planters come with a wooden stand to help elevate
+          your plants off the ground. The ceramic cylinder planters come with a
+          wooden stand to help elevate your plants off the ground. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec
+          est tristique auctor. Donec non est at libero vulputate rutrum. Morbi
+          ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate
+          adipiscing cursus eu, suscipit id nulla. Pellentesque aliquet, sem
+          eget laoreet ultrices, ipsum metus feugiat sem, quis fermentum turpis
+          eros eget velit. Donec ac tempus ante. Fusce ultricies massa massa.
+          Fusce aliquam, purus eget sagittis vulputate, sapien libero hendrerit
+          est, sed commodo augue nisi non neque. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Sed tempor, lorem et placerat vestibulum,
+          metus nisi posuere nisl, in accumsan elit odio quis mi. Cras neque
+          metus, consequat et blandit et, luctus a nunc. Etiam gravida vehicula
+          tellus, in imperdiet ligula euismod eget. The ceramic cylinder
+          planters come with a wooden stand to help elevate your plants off the
+          ground.
+        </p>
+      </section> -->
+
+      <footer class="footer app__footer">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img" src="src/images/logo.png" alt="logo" />
+        </a>
+        <div class="location footer__location">
+          <img
+            class="location__img"
+            src="src/images/location.svg"
+            alt="location"
+          />
+          <div class="location__text">
+            70 West Buckingham Ave. Farmingdale, NY 11735
+          </div>
+        </div>
+        <div class="email footer__email">
+          <img class="email__img" src="src/images/email.svg" alt="email" />
+          <div class="email__text">contact@greenshop.com</div>
+        </div>
+        <div class="call footer__call">
+          <img class="call__img" src="src/images/call.svg" alt="call" />
+          <div class="call__text">+88 01911 717 490</div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

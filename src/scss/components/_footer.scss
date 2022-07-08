@@ -1,0 +1,61 @@
+.footer {
+  &__logo {
+    margin-right: 90px;
+  }
+
+  @each $name in "location" "email" "call" {
+    &__#{$name} {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.location {
+  & {
+    margin-right: 62px;
+  }
+
+  &__img {
+    margin-right: 12px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3d3d3d;
+    width: 176px;
+  }
+}
+
+.email {
+  & {
+    margin-right: 75px;
+  }
+
+  &__img {
+    margin-right: 12px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3d3d3d;
+  }
+}
+
+.call {
+  &__img {
+    margin-right: 12px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #3d3d3d;
+  }
+}
