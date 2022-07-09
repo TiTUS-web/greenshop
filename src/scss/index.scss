@@ -1,18 +1,18 @@
-@use "./reset";
-@use "./mixins";
-@use "./variables";
+@use './reset';
+@use './mixins';
+@use './variables';
 
 // header
-@use "./components/header";
+@use './components/header';
 // /header
 
 // footer
-@use "./components/footer";
+@use './components/footer';
 // /footer
 
 // components
-@use "./components/promo";
-@use "./components/shop";
+@use './components/promo';
+@use './components/shop';
 @use './components/product';
 @use './components/shopping-cart';
 // /components
@@ -23,13 +23,11 @@
 // /login
 
 .app {
-  &_wrapper {
-    max-width: 1240px;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin: 0 auto;
-    // text-align: center;
-  }
+  max-width: 1240px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  // text-align: center;
 
   // .app__header
 
