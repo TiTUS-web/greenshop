@@ -1,22 +1,22 @@
-const path = require('path');
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const ImageminMozjpeg = require('imagemin-mozjpeg');
+const path = require("path");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
+const ImageminMozjpeg = require("imagemin-mozjpeg");
 
-let mode = 'development';
-let target = 'web';
+let mode = "development";
+let target = "web";
 const plugins = [
   new CleanWebpackPlugin(),
   new MiniCssExtractPlugin(),
   new HtmlWebpackPlugin({
-    template: './src/index.html',
+    template: "./src/index.html",
   }),
   new CssMinimizerPlugin(),
   new ImageminPlugin({
-    disable: process.env.NODE_ENV !== 'production',
+    disable: process.env.NODE_ENV !== "production",
     pngquant: {
       quality: 85,
     },
@@ -27,23 +27,23 @@ const plugins = [
       }),
     ],
   }),
-]
+];
 
-if (process.env.NODE_ENV === 'production') {
-  mode = 'production';
-  target = 'browserslist';
+if (process.env.NODE_ENV === "production") {
+  mode = "production";
+  target = "browserslist";
 }
 
 module.exports = {
   mode: mode,
   entry: {
-    bundle: path.resolve(__dirname, 'src/index.js'),
+    bundle: path.resolve(__dirname, "src/index.js"),
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: '[name][contenthash].js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name][contenthash].js",
     clean: true,
-    assetModuleFilename: 'images/[hash][ext][query]',
+    assetModuleFilename: "images/[hash][ext][query]",
   },
 
   module: {
@@ -53,27 +53,27 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
-            options: {publicPath: ''},
+            options: { publicPath: "" },
           },
-          'css-loader',
-          'sass-loader',
+          "css-loader",
+          "sass-loader",
         ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
       {
         test: /\.(woff|woff2)$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: './fonts/[name].[ext]',
+          name: "./fonts/[name].[ext]",
         },
       },
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ["babel-loader"],
       },
     ],
   },
@@ -82,14 +82,18 @@ module.exports = {
 
   target: target,
 
-  devtool: 'source-map',
+  devtool: "source-map",
 
   resolve: {
-    extensions: ['*', '.js'],
+    extensions: ["*", ".js", ".ts"],
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@core": path.resolve(__dirname, "src/core"),
+    },
   },
 
   devServer: {
-    port: 3000,
+    port: 3001,
     open: true,
     hot: true,
     compress: true,
